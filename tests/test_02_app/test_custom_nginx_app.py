@@ -38,7 +38,7 @@ def verify_container(container, response_text):
     assert "need-app = true" in logs
     assert "die-on-term = true" in logs
     assert "show-config = true" in logs
-    assert "wsgi-file = /app/app/app.py" in logs
+    assert "wsgi-file = /app/app-wsgi.py" in logs
     assert "processes = 16" in logs
     assert "cheaper = 2" in logs
     assert "Checking for script in /app/prestart.sh" in logs
