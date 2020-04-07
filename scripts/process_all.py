@@ -9,7 +9,7 @@ environments = [
         "TEST_STR1": "Hello, World! This is the default message of a nginx uWSGI python {} app deployed in a Docker container",
         "TEST_STR2": "Hello, World! Custom Python {} App overriding default app for Testing",
         "RUN_TESTS": "1",
-    },
+    }
 ]
 
 start_with = os.environ.get("START_WITH")
