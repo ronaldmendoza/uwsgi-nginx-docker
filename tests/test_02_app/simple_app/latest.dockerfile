@@ -1,3 +1,3 @@
 FROM rontype1/uwsgi-nginx:latest
 
-COPY ./app/app-wsgi.py /app/app-wsgi.py
+COPY ./app/app/app-wsgi.py /app/app/app-wsgi.py
