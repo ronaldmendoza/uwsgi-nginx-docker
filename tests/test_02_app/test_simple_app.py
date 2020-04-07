@@ -17,7 +17,7 @@ client = docker.from_env()
 
 def verify_container(container, response_text):
     nginx_config = get_nginx_config(container)
-    assert "client_max_body_size 0;" in nginx_config
+    assert "client_max_body_size 1m;" in nginx_config
     assert "worker_processes 1;" in nginx_config
     assert "listen 80;" in nginx_config
     assert "worker_connections 1024;" in nginx_config
