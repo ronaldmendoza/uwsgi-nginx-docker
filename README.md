@@ -11,7 +11,7 @@ This [**Docker**](https://www.docker.com/) image allows you to create [**Python*
 
 The combination of uWSGI with Nginx is a [common way to deploy Python web applications like Flask and Django](http://flask.pocoo.org/docs/1.0/deploying/uwsgi/). It is widely used in the industry and would give you decent performance. (*)
 
-This image was created to be the base image for [**tiangolo/uwsgi-nginx-flask**](https://hub.docker.com/r/rontype1/uwsgi-nginx-flask/) but could be used as the base image for any other (WSGI-based) Python web application, like Django.
+This image was created to be the base image for [**rontype1/flask-uwsgi-nginxk**](https://hub.docker.com/r/rontype1/flask-uwsgi-nginx/) but could be used as the base image for any other (WSGI-based) Python web application, like Django.
 
 ---
 

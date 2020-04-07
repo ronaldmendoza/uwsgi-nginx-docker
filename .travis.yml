@@ -1,4 +1,4 @@
-dist: xenial
+dist: bionic
 
 language: python
 
@@ -12,8 +12,7 @@ services:
   - docker
 
 env:
-  - NAME='python3.7' BUILD_PATH='python3.7' TEST_STR1='Hello World from a default Nginx uWSGI Python 3.7 app in a Docker container (default)' TEST_STR2='Hello World from Nginx uWSGI Python 3.7 app in a Docker container' RUN_TESTS='1'
-  - NAME='latest' BUILD_PATH='python3.7' TEST_STR1='Hello World from a default Nginx uWSGI Python 3.7 app in a Docker container (default)' TEST_STR2='Hello World from Nginx uWSGI Python 3.7 app in a Docker container' RUN_TESTS='1'
+  - NAME='latest' BUILD_PATH='python3.7' TEST_STR1='Hello, World! This is the default message of a nginx uWSGI python 3.7 app deployed in a Docker container' TEST_STR2='Hello, World! Custom Python 3.7 App overriding default app for Testing' RUN_TESTS='1'
 
 script: bash scripts/test.sh
 

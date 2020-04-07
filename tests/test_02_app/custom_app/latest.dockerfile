@@ -1,4 +1,4 @@
-FROM tiangolo/uwsgi-nginx:latest
+FROM rontype1/uwsgi-nginx:latest
 
 COPY ./application /application
 COPY ./prestart.sh /app/prestart.sh

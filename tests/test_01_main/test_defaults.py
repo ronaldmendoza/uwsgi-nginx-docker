@@ -37,7 +37,7 @@ def verify_container(container, response_text):
     assert "need-app = true" in logs
     assert "die-on-term = true" in logs
     assert "show-config = true" in logs
-    assert "wsgi-file = /app/main.py" in logs
+    assert "wsgi-file = /app/app/app-wsgi.py" in logs
     assert "processes = 16" in logs
     assert "cheaper = 2" in logs
     assert "Checking for script in /app/prestart.sh" in logs
@@ -61,7 +61,7 @@ def test_defaults():
     if not os.getenv("RUN_TESTS"):
         return
     name = os.getenv("NAME")
-    image = f"tiangolo/uwsgi-nginx:{name}"
+    image = f"rontype1/uwsgi-nginx:{name}"
     response_text = os.getenv("TEST_STR1")
     sleep_time = int(os.getenv("SLEEP_TIME", 3))
     remove_previous_container(client)

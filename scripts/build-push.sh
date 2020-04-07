@@ -2,7 +2,7 @@
 
 set -e
 
-use_tag="tiangolo/uwsgi-nginx:$NAME"
+use_tag="rontype1/uwsgi-nginx:$NAME"
 use_dated_tag="${use_tag}-$(date -I)"
 
 docker build -t "$use_tag" "$BUILD_PATH"
